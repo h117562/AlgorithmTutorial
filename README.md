@@ -1,2 +1,0 @@
-# AlgorithmTutorial
- Algorithm with C
