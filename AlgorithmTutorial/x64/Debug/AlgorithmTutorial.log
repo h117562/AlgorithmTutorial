@@ -1,3 +1,4 @@
 ﻿  main.cpp
-D:\Algorithm\AlgorithmTutorial\AlgorithmTutorial\main.cpp(14,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+D:\Algorithm\AlgorithmTutorial\AlgorithmTutorial\main.cpp(25,26): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Algorithm\AlgorithmTutorial\AlgorithmTutorial\main.cpp(33,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   AlgorithmTutorial.vcxproj -> D:\Algorithm\AlgorithmTutorial\x64\Debug\AlgorithmTutorial.exe
