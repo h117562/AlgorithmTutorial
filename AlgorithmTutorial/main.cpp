@@ -1,13 +1,29 @@
-﻿#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+﻿#include <iostream>
 
-int solution(int num1, int num2) {
-    int answer = 0;
+using namespace std;
+
+bool solution(int num) {
+    bool answer = true;
+    int temp = num;
+    int sum = 0;
+
+    if (num > 10000) return false;
+
+    for (int i = 10000; i >= 1; i /= 10)
+    {
+        sum += temp / i;
+        temp = temp % i;
+    }
+
+    if (num % sum != 0)
+    {
+        return false;
+    }
+
     return answer;
 }
 
 void main()
 {
-    printf("%d\n");
+    cout << solution(18) << endl;
 }
