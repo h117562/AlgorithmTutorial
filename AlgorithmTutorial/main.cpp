@@ -1,13 +1,22 @@
-﻿#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+﻿#include <string>
+#include <iostream>
 
-int solution(int num1, int num2) {
-    int answer = 0;
-    return answer;
+using namespace std;
+
+string solution(string phone_number) {
+	string answer = "";
+
+	if (phone_number.length() > 4)
+	{
+		for (int i = 0; i < phone_number.length() - 4; i++)//뒤 4개를 제외한 길이만큼 *로 채워넣기
+			answer += "*";
+		answer += phone_number.substr(phone_number.length() - 4, 4);
+	}
+
+	return answer;
 }
 
 void main()
 {
-    printf("%d\n");
+	cout << solution("nkldsflskdnf");
 }
