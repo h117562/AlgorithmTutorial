@@ -1,13 +1,39 @@
-﻿#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+﻿#include <string>
+#include <vector>
+#include <iostream>
 
-int solution(int num1, int num2) {
+using namespace std;
+
+int solution(vector<string> babbling) {
     int answer = 0;
+
+    string same[] = {"aya", "ye", "woo", "ma"};
+
+    for (string obj : babbling)
+    {
+        int check = 0;
+
+        for (string x : same)
+        {
+            if (obj.compare(x) >= 0)
+            {
+                check++;
+            }
+        }
+
+        if (check == same->size() + 1)
+        {
+            answer++;
+        }
+    }
+
     return answer;
 }
 
+
 void main()
 {
-    printf("%d\n");
+    vector<string> str = { "ayaye", "uuu", "yeye", "yemawoo", "ayaayaa" };
+
+    cout << solution(str);
 }
