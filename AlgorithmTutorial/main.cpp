@@ -1,13 +1,24 @@
-﻿#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+﻿#include <vector>
+#include <iostream>
 
-int solution(int num1, int num2) {
-    int answer = 0;
+using namespace std;
+
+double solution(vector<int> arr) {
+    double answer = 0;
+    
+    for (int a : arr)
+    {
+        answer += a;
+    }
+
+    answer /= arr.size();
+
     return answer;
 }
 
 void main()
 {
-    printf("%d\n");
+    vector<int> arr = { 1,2,3,4 };
+
+    cout << solution(arr) << endl;
 }
