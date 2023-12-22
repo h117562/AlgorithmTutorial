@@ -1,13 +1,23 @@
-﻿#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+﻿#include <vector>
+#include <iostream>
 
-int solution(int num1, int num2) {
+using namespace std;
+
+int solution(int n) {
     int answer = 0;
+
+    for (int i = 0; i <= n; i++)
+    {
+        if (i % 2 == 0)
+        {
+            answer += i;
+        }
+    }
+
     return answer;
 }
 
 void main()
 {
-    printf("%d\n");
+    cout << solution(8);
 }
